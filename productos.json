@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "Faja Reductora Deportiva",
+        "precio": 75000,
+        "imagen": "https://picsum.photos/seed/faja1/400/400",
+        "categoria": "fajas",
+        "descripcion": "Faja deportiva que moldea y estiliza tu figura.",
+        "wpp": "https://wa.me/573001112222?text=Hola,%20quiero%20la%20faja%20reductora"
+    },
+    {
+        "id": 2,
+        "nombre": "Leggins Push-Up",
+        "precio": 68000,
+        "imagen": "https://picsum.photos/seed/leggins/400/400",
+        "categoria": "ropa-deportiva",
+        "descripcion": "Leggins con efecto push-up y tela de alta compresión.",
+        "wpp": "https://wa.me/573001112222?text=Hola,%20estoy%20interesada%20en%20los%20leggins"
+    },
+    {
+        "id": 3,
+        "nombre": "Kit Maquillaje Natural",
+        "precio": 55000,
+        "imagen": "https://picsum.photos/seed/maquillaje/400/400",
+        "categoria": "maquillaje",
+        "descripcion": "Incluye base, rubor, labial y sombras en tonos tierra.",
+        "wpp": "https://wa.me/573001112222?text=Hola,%20quiero%20info%20del%20kit%20de%20maquillaje"
+    },
+    {
+        "id": 4,
+        "nombre": "Top Deportivo ChimbaFit",
+        "precio": 45000,
+        "imagen": "https://picsum.photos/seed/top/400/400",
+        "categoria": "ropa-deportiva",
+        "descripcion": "Top deportivo de alta resistencia y tela fresca.",
+        "wpp": "https://wa.me/573001112222?text=Hola,%20me%20interesa%20el%20top%20deportivo"
+    },
+    {
+        "id": 5,
+        "nombre": "Faja Cinturilla Látex",
+        "precio": 82000,
+        "imagen": "https://picsum.photos/seed/faja2/400/400",
+        "categoria": "fajas",
+        "descripcion": "Cinturilla de látex con triple ajuste, máxima compresión.",
+        "wpp": "https://wa.me/573001112222?text=Hola,%20quiero%20la%20faja%20cinturilla%20látex"
+    },
+    {
+        "id": 6,
+        "nombre": "Delineador Waterproof",
+        "precio": 28000,
+        "imagen": "https://picsum.photos/seed/delineador/400/400",
+        "categoria": "maquillaje",
+        "descripcion": "Delineador negro resistente al agua, precisión total.",
+        "wpp": "https://wa.me/573001112222?text=Hola,%20me%20gusta%20el%20delineador%20waterproof"
+    },
+    {
+        "id": 7,
+        "nombre": "Short Deportivo Cadera Alta",
+        "precio": 40000,
+        "imagen": "https://picsum.photos/seed/short/400/400",
+        "categoria": "ropa-deportiva",
+        "descripcion": "Short cómodo para gym o uso diario. Control suave.",
+        "wpp": "https://wa.me/573001112222?text=Hola,%20quiero%20el%20short%20deportivo"
+    },
+    {
+        "id": 8,
+        "nombre": "Paleta de Sombras Urban Glow",
+        "precio": 67000,
+        "imagen": "https://picsum.photos/seed/sombras/400/400",
+        "categoria": "maquillaje",
+        "descripcion": "12 tonos vibrantes, duraderos y fáciles de difuminar.",
+        "wpp": "https://wa.me/573001112222?text=Hola,%20quiero%20la%20paleta%20Urban%20Glow"
+    }
+]

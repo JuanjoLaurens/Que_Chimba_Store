@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo | ¡Que Chimba! Store</title>
+    <link rel="stylesheet" href="/Que_Chimba_Store/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="catalogo.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" height="40">
+                <h1>!Que Chimba! <span>Store</span></h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#">Catálogo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalogo">
+        <section class="filtros container">
+            <input type="text" id="busqueda" placeholder="Buscar producto...">
+            <select id="categoria">
+                <option value="">Todas las categorías</option>
+                <option value="ropa-deportiva">Ropa deportiva</option>
+                <option value="maquillaje">Maquillaje</option>
+                <option value="fajas">Fajas</option>
+            </select>
+        </section>
+
+        <section class="grid-productos container" id="lista-productos">
+            <!-- Aquí van los productos -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ¡Que Chimba! Store - Todos los flows reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
