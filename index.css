@@ -62,7 +62,7 @@ a {
 
 /* HERO */
 .hero {
-    background: url('https://images.pexels.com/photos/2247179/pexels-photo-2247179.jpeg') no-repeat center top;
+    background: url("img/hero.png") no-repeat center top;
     background-size: cover;
     position: relative;
     height: 60vh;
