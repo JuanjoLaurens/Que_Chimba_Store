@@ -2,12 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Que Chimba! Store</title>
-    <link rel="stylesheet" href="/Que_Chimba_Store/styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>!QUÉ CHIMBA! Store</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
 </head>
 
 <body>
@@ -15,61 +16,45 @@
     <header class="navbar">
         <div class="container nav-content">
             <div class="logo">
-                <!-- Logo de la tienda -->
-                <img src="img/logo.png" alt="!Que Chimba! Logo" height="40">
-                <h1>!Que Chimba! <span>Store</span></h1>
+                <h1>!QUÉ CHIMBA! <span>Store</span></h1>
             </div>
             <nav class="menu">
-                <a href="#destacados">Destacados</a>
-                <a href="catalogo.html">Catálogo</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#destacados">COLECCIONES</a>
+                <a href="catalogo.html">CATÁLOGO</a>
             </nav>
         </div>
     </header>
 
-    <!-- HERO / BANNER PRINCIPAL -->
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Ropa con flow Medallo</h2>
-            <p>Fajas, leggins, outfits urbanos y mucho más. Elegancia y estilo pa' romperla.</p>
-            <a href="catalogo.html" class="btn-hero">Ver Catálogo Completo</a>
+        <div class="hero-overlay">
+            <div class="hero-content container">
+                <h2>Elegancia que inspira</h2>
+                <p>Descubrí piezas cuidadosamente seleccionadas para realzar tu estilo y comodidad.</p>
+                <a href="catalogo.html" class="btn-hero">Explorar Catálogo</a>
+            </div>
         </div>
     </section>
 
     <!-- PRODUCTOS DESTACADOS -->
     <section class="destacados" id="destacados">
         <div class="container">
-            <h2>🔥 Productos Destacados</h2>
-            <div class="grid-destacados">
-                <!-- Card ejemplo -->
-                <div class="card-producto">
-                    <img src="img/faja1.jpg" alt="Faja Deportiva">
-                    <h3>Faja Deportiva</h3>
-                    <p>$75.000 COP</p>
-                    <a href="https://wa.me/573001112222?text=Hola,%20me%20interesa%20la%20Faja%20Deportiva"
-                        class="btn-wpp" target="_blank">Pedir por WhatsApp</a>
-                </div>
-                <div class="card-producto">
-                    <img src="img/leggins.jpg" alt="Leggins Push-Up">
-                    <h3>Leggins Push-Up</h3>
-                    <p>$68.000 COP</p>
-                    <a href="https://wa.me/573001112222?text=Hola,%20quiero%20más%20info%20de%20los%20leggins"
-                        class="btn-wpp" target="_blank">Pedir por WhatsApp</a>
-                </div>
-                <!-- Puedes duplicar esto para más productos destacados -->
+            <h2>✨ Colecciones Destacadas</h2>
+            <div class="grid-destacados" id="grid-destacados">
+                <!-- Aquí se cargarán automáticamente los productos más caros -->
             </div>
         </div>
     </section>
 
-    <!-- SECCION DE CONTACTO / REDES -->
+    <!-- CONTACTO -->
     <section class="contacto" id="contacto">
         <div class="container">
-            <h2>¡Hablemos!</h2>
-            <p>Escribinos por WhatsApp o seguinos en redes sociales pa' estar al tanto del flow nuevo.</p>
+            <h2>Estamos para asesorarte</h2>
+            <p>Escríbenos para recibir atención personalizada y conocer nuestras nuevas colecciones.</p>
             <div class="redes">
-                <a href="https://wa.me/573001112222" target="_blank">WhatsApp</a>
-                <a href="#">Instagram</a>
-                <a href="#">TikTok</a>
+                <a href="https://wa.me/+18099325225" target="_blank">WhatsApp</a>
+                <a href="https://www.instagram.com/que_chimba_store4/" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@que_chimba_store4?_t=ZT-8y55oeVRekn&_r=1" target="_blank">TikTok</a>
             </div>
         </div>
     </section>
@@ -77,9 +62,11 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 ¡Que Chimba! Store. Con flow desde Medallo pa'l mundo. 💚</p>
+            <p>&DOPy; 2025 !QUÉ CHIMBA! Store. Estilo y comodidad desde Medellín.</p>
         </div>
     </footer>
+
+    <script src="catalogo.js"></script>
 </body>
 
 </html>

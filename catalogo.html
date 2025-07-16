@@ -4,47 +4,79 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catálogo | ¡Que Chimba! Store</title>
-    <link rel="stylesheet" href="/Que_Chimba_Store/styles/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src="catalogo.js"></script>
+    <title>!QUÉ CHIMBA! Store</title>
+    <link rel="stylesheet" href="catalogo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar">
         <div class="container nav-content">
             <div class="logo">
-                <img src="img/logo.png" alt="Logo" height="40">
-                <h1>!Que Chimba! <span>Store</span></h1>
+                <h1>¡Que <span>Chimba</span>! Store</h1>
             </div>
-            <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="#">Catálogo</a>
-            </nav>
+            <div class="menu">
+                <a href="index.html">INICIO</a>
+                <a href="#">CATÁLOGO</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="catalogo">
-        <section class="filtros container">
-            <input type="text" id="busqueda" placeholder="Buscar producto...">
-            <select id="categoria">
-                <option value="">Todas las categorías</option>
-                <option value="ropa-deportiva">Ropa deportiva</option>
-                <option value="maquillaje">Maquillaje</option>
-                <option value="fajas">Fajas</option>
-            </select>
-        </section>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        <div class="catalogo-layout">
+            <!-- SIDEBAR DE FILTROS -->
+            <aside class="sidebar">
+                <h2>Filtrar</h2>
+                <input type="text" id="busqueda" placeholder="Buscar producto..." />
+                <select id="categoria">
+                    <option value="">Todas las categorías</option>
+                    <option value="fajas">Fajas</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="ropa-interior">Ropa interior</option>
+                    <option value="kits">Kits</option>
+                    <option value="ropa">Ropa</option>
+                    <option value="ropa-deportiva">Ropa deportiva</option>
+                </select>
+            </aside>
 
-        <section class="grid-productos container" id="lista-productos">
-            <!-- Aquí van los productos -->
-        </section>
+            <!-- GRID DE PRODUCTOS -->
+            <section class="grid-productos" id="lista-productos">
+                <!-- Aquí se inyectan los productos desde JS -->
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 ¡Que Chimba! Store - Todos los flows reservados.</p>
+    <!-- MODAL PRODUCTO -->
+    <div class="modal hidden" id="modal-producto">
+        <div class="modal-content">
+            <span class="cerrar-modal">&times;</span>
+
+            <div class="carousel" id="carousel">
+                <!-- Carrusel generado por JS -->
+            </div>
+
+            <h2 id="modal-nombre"></h2>
+            <p id="modal-descripcion"></p>
+            <p class="precio" id="modal-precio"></p>
+
+            <div class="info-extra">
+                <p id="modal-tallas"></p>
+                <p id="modal-colores"></p>
+                <p id="modal-variantes"></p>
+            </div>
+
+            <a id="modal-wpp" class="btn-wpp" href="#" target="_blank">Pedir por WhatsApp</a>
         </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 !QUÉ CHIMBA! Store — Todos los derechos reservados</p>
     </footer>
+
+    <script src="catalogo.js"></script>
 </body>
 
 </html>

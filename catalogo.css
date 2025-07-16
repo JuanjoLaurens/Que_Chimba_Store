@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #d3d2d2;
+  /* No tan oscuro, mejor contraste */
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #fcd116 0%, #003893 50%, #ce1126 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1.0;
+  /* Aumenta el brillo visual */
+}
+
+.logo span {
+  display: inline;
+  font-weight: 700;
+}
+
+
+.menu a {
+  margin-left: 25px;
+  color: black;
+  font-weight: 700;
+  font-style: bold;
+  transform: uppercase;
+
+}
+
+.menu a:hover {
+  color: red;
+}
+
+/* LAYOUT DEL CATALOGO */
+.catalogo-layout {
+  display: flex;
+  gap: 30px;
+  margin: 60px 0;
+}
+
+/* SIDEBAR / FILTROS */
+sidebar {
+  width: 100%;
+  max-width: 280px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 2px solid #bfa46f;
+  padding-bottom: 10px;
+}
+
+.sidebar input,
+.sidebar select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+/* GRID PRODUCTOS */
+.grid-productos {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  align-items: stretch;
+  max-width: 1200px;
+}
+
+.card-producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  height: 100%;
+}
+
+
+.card-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-producto img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card-producto h3 {
+  margin: 5px 0;
+  color: #111;
+  font-size: 1rem;
+}
+
+.card-producto p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card-producto .btn-wpp {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-wpp {
+  display: inline-block;
+  background-color: #2e0fdf;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.card-producto .btn-wpp:hover {
+  background-color: #1ebe5d;
+}
+
+.modal-content {
+  background: #fff;
+  color: #1a1a1a;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 540px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.95rem;
+  max-height: 90vh;
+  /* ✅ límite para que no se desborde */
+  overflow-y: auto;
+  /* ✅ scroll si es necesario */
+}
+
+
+.modal-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #333;
+}
+
+.modal-content p {
+  margin: 0;
+  line-height: 1.5;
+  color: #444;
+}
+
+.modal-content .precio {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2e0fdf;
+}
+
+.modal-content .info-extra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.modal-content .info-extra span {
+  background-color: #f2f2f2;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #555;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.cerrar-modal:hover {
+  color: #000;
+}
+
+/* Carrusel actualizado */
+.carousel {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel-img-container {
+  width: 100%;
+}
+
+.carousel-img-container img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: none;
+}
+
+
+.carousel-img-container img.active {
+  display: block;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.carousel-buttons button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel-buttons button.active {
+  background-color: #bfa46f;
+}
+
+/* Flechas del carrusel */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-arrow.next {
+  right: 10px;
+}
+
+.carousel-arrow:hover {
+  background-color: white;
+}
+
+/* Botón WhatsApp dentro del modal */
+.modal-content .btn-wpp {
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.modal-content .btn-wpp:hover {
+  background-color: #1ebe5d;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #fcd116;
+  color: #000;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.grid-productos:has(.card-producto:only-child) {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-producto {
+  max-width: 280px;
+}
